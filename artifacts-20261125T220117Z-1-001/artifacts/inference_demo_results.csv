@@ -1,0 +1,13 @@
+True_Label,Day,Predicted_Label,Attack_Probability,Supervised_Prob,Anomaly_Score_MSE,Alert_Severity,Detection_Trigger
+BENIGN,Monday,BENIGN,0.0864,0.0,0.0045,LOW,Normal Baseline
+BENIGN,Monday,BENIGN,0.0914,0.0,0.0108,LOW,Normal Baseline
+BENIGN,Friday,BENIGN,0.0888,0.0,0.0075,LOW,Normal Baseline
+BENIGN,Friday,BENIGN,0.1308,0.0,0.0524,LOW,Normal Baseline
+DoS Hulk,Wednesday,ATTACK,1.0,1.0,0.3268,CRITICAL,Supervised + Anomaly (DoS Hulk)
+DoS Hulk,Wednesday,ATTACK,1.0,1.0,0.1379,CRITICAL,Known Signature (DoS Hulk)
+FTP-Patator,Tuesday,ATTACK,1.0,1.0,0.1335,CRITICAL,Known Signature (FTP-Patator)
+Web Attack - Brute Force,Thursday,ATTACK,1.0,1.0,0.038,CRITICAL,Known Signature (Web Attack - XSS)
+DDoS,Friday,ATTACK,0.9279,0.0217,0.5118,CRITICAL,Zero-Day Anomaly
+DDoS,Friday,BENIGN,0.4811,0.0023,0.2402,LOW,Normal Baseline
+PortScan,Friday,BENIGN,0.274,0.0,0.1473,LOW,Normal Baseline
+Bot,Friday,BENIGN,0.3855,0.0,0.1998,LOW,Normal Baseline

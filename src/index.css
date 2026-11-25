@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[data-theme="dark"], :root {
+  --canvas-bg: #0A0A0A;
+  --canvas-subtle: #111111;
+  --canvas-elevated: #161616;
+
+  --line-hairline: #1F1F1F;
+  --line-subtle: #2B2B2B;
+  --line-strong: #3E3E3E;
+
+  --ink-primary: #EDEDED;
+  --ink-secondary: #8E8E8E;
+  --ink-muted: #5A5A5A;
+  --ink-inverted: #0A0A0A;
+
+  --accent: #0070F3;
+  --accent-hover: #005AD0;
+  --accent-subtle: rgba(0, 112, 243, 0.08);
+
+  --alert-error: #E5484D;
+  --alert-warn: #F76B15;
+  --alert-ok: #30A46C;
+}
+
+:root[data-theme="light"] {
+  --canvas-bg: #FFFFFF;
+  --canvas-subtle: #FAFAFA;
+  --canvas-elevated: #F4F4F5;
+
+  --line-hairline: #EAEAEA;
+  --line-subtle: #D4D4D8;
+  --line-strong: #A1A1AA;
+
+  --ink-primary: #111111;
+  --ink-secondary: #666666;
+  --ink-muted: #999999;
+  --ink-inverted: #FFFFFF;
+
+  --accent: #0070F3;
+  --accent-hover: #005AD0;
+  --accent-subtle: rgba(0, 112, 243, 0.06);
+
+  --alert-error: #D32F2F;
+  --alert-warn: #ED6C02;
+  --alert-ok: #2E7D32;
+}
+
+* {
+  border-color: var(--line-hairline);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line-subtle);
+  border-radius: 2px;
+}

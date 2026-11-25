@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+dist/
+build/
+
+# Large Datasets (> 100MB exceeds GitHub limits)
+*.zip
+*.csv.gz
+raw_data/
+data/raw/
+
+# Python / Colab
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.egg-info/
+
+# Logs & Environment
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
